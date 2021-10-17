@@ -81,6 +81,14 @@ body{
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+.code-block{
+    margin: 20px 140px 20px 140px;
+    border: 1px solid #4a4e69;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 16px;
+}
 
 @media (max-width: 400px) {
     .card{
@@ -99,5 +107,10 @@ body{
 
     .title{
         margin-top: 6px;
+    }
+
+    .code-block{
+        margin: 20px 0 20px 0;
+        font-size: 12px;
     }
 }

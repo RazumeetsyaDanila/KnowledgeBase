@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../styles/basics/cycles.css">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../img/alien3.ico" type="image/x-icon">
     <title>Циклы</title>
 </head>
@@ -20,7 +21,7 @@
                     while
                 </div>
                 <div class="title" id="do_while">
-                    do_while
+                    do...while
                 </div>
                 <div class="title" id="for">
                     for
@@ -34,10 +35,39 @@
                     </div>
 
                     <div id="while-content">
-                        Одно выполнение тела цикла по-научному называется итерация. Цикл в примере выше совершает три итерации. <br><br>
-                        Если бы строка i++ отсутствовала в примере выше, то цикл бы повторялся (в теории) вечно. На практике, конечно, браузер не позволит такому случиться, он предоставит пользователю возможность остановить «подвисший» скрипт, а JavaScript на стороне сервера придётся «убить» процесс.<br><br>
-                        Любое выражение или переменная может быть условием цикла, а не только сравнение: условие while вычисляется и преобразуется в логическое значение.
-                        Например, while (i) – более краткий вариант while (i != 0):
+                        <div>
+                            Цикл while имеет следующий синтаксис:
+                        </div>
+                        <div class="code-block">
+                            while (condition) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;// код<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;// также называемый "телом цикла"<br>
+                            }
+                        </div>
+                        <div>
+                            Код из тела цикла выполняется, пока условие condition истинно.<br>
+                            Например, цикл ниже выводит i, пока i < 3:
+                        </div>
+                        <div class="code-block">
+                            let i = 0;<br>
+                            while (i < 3) { // выводит 0, затем 1, затем 2<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            }
+                        </div>
+                        <div>
+                            Одно выполнение тела цикла по-научному называется итерация. Цикл в примере выше совершает три итерации. <br><br>
+                            Если бы строка i++ отсутствовала в примере выше, то цикл бы повторялся (в теории) вечно. На практике, конечно, браузер не позволит такому случиться, он предоставит пользователю возможность остановить «подвисший» скрипт, а JavaScript на стороне сервера придётся «убить» процесс.<br><br>
+                            Любое выражение или переменная может быть условием цикла, а не только сравнение: условие while вычисляется и преобразуется в логическое значение.
+                            Например, while (i) – более краткий вариант while (i != 0):
+                        </div>
+                        <div class="code-block">
+                            let i = 3;<br>
+                            while (i) { // когда i будет равно 0, условие станет ложным, и цикл остановится<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
+                            }
+                        </div>
                     </div>
                 </div>
 
