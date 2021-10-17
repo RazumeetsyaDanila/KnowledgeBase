@@ -1,0 +1,88 @@
+body{
+    background-color: #f2e9e4;
+    cursor: default;
+    -moz-user-select: none;
+}
+
+.content{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: darkred;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    /*grid-auto-flow: column;*/
+    grid-template-columns: repeat( auto-fill, 200px);
+    justify-content: center;
+    grid-row-gap: 10px;
+}
+
+.card{
+    background-color: #c9ada7;
+    padding: 10px 10px 10px 10px;
+    width: 156px;
+    border-radius: 8px;
+    border: 2px solid #4a4e69;
+    align-self: start;
+    justify-self: center;
+}
+
+.title > p{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #4a4e69;
+}
+
+.subtitle > p{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 20px;
+    border: 2px solid #9a8c98;
+    border-radius: 6px;
+    text-align: center;
+    margin: 0 0 6px 0;
+}
+
+.subtitle > p:hover{
+    cursor: pointer;
+    border: 2px solid darkred;
+    color: darkred;
+}
+
+.back-to-main{
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    color: #4a4e69;
+    width: 140px;
+    margin: 6% auto;
+    text-align: center;
+}
+
+.back-to-main:hover{
+    color: darkred;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .card{
+        width: 240px;
+    }
+
+    .subtitle > p{
+        margin: 0 40px 6px 40px;
+    }
+}
+
+/*------------------Заполненные--------------------*/
+/*#cycles > p, #arrays > p{*/
+/*    border: 2px solid #4a4e69;*/
+/*}*/
+
+/*#cycles > p:hover, #arrays > p:hover{*/
+/*    border: 2px solid darkred;*/
+/*}*/
