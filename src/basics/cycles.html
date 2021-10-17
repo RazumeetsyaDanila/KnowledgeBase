@@ -68,26 +68,62 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
                             }
                         </div>
-<!--                        <div style="height: 20px"></div>-->
                     </div>
                 </div>
 
                 <div class="do_while"  id="do_while-block">
-                    <div class="title" id="do_while-title" style="display: none">
+                    <div class="title" id="do_while-title">
                         Цикл "do...while"
                     </div>
 
                     <div id="do_while-content">
+                        <div>
+                            Проверку условия можно разместить под телом цикла, используя специальный синтаксис do..while:
+                        </div>
+                        <div class="code-block">
+                            do {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;// тело цикла<br>
+                            } while (condition);
+                        </div>
+                        <div>
+                            Цикл сначала выполнит тело, а затем проверит условие condition, и пока его значение равно true, он будет выполняться снова и снова.<br><br>
+                            Например:
+                        </div>
+                        <div class="code-block">
+                            let i = 0;<br>
+                            do {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            } while (i < 3);
+                        </div>
+                        <div>
+                            Такая форма синтаксиса оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным. На практике чаще используется форма с предусловием: while(…) {…}.
+                        </div>
 
                     </div>
                 </div>
 
                 <div class="for" id="for-block">
-                    <div class="title" id="for-title" style="display: none">
+                    <div class="title" id="for-title">
                         Цикл "for"
                     </div>
 
                     <div id="for-content">
+                        <div>
+                            Более сложный, но при этом самый распространённый цикл — цикл for.<br><br>
+                            Выглядит он так:
+                        </div>
+                        <div class="code-block">
+                            for (начало; условие; шаг) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;// ... тело цикла ...<br>
+                            }
+                        </div>
+                        <div>Например:</div>
+                        <div class="code-block">
+                            for (let i = 0; i < 3; i++) { // выведет 0, затем 1 и 2<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;alert(i);<br>
+                            }
+                        </div>
 
                     </div>
                 </div>

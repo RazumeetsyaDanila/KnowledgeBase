@@ -79,7 +79,7 @@ body{
     -moz-user-select: none;
 }
 
-#while-content{
+#while-content, #do_while-content, #for-content{
     text-align: start;
     font-size: 18px;
     font-family: 'Ubuntu Condensed', sans-serif;
