@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/basics/cycles.css">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    <title>cycles</title>
+    <link rel="shortcut icon" href="../../img/alien3.ico" type="image/x-icon">
+    <title>Циклы</title>
 </head>
 <body>
     <div>
         <p id="back-btn" onclick="location.href='../../index.html'">Назад</p>
     </div>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="title" id="while">
+                    while
+                </div>
+                <div class="title" id="do_while">
+                    do_while
+                </div>
+                <div class="title" id="for">
+                    for
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="while" id="while-block">
+                    <div class="title" id="while-title">
+                        Цикл "while"
+                    </div>
+
+                    <div id="while-content">
+                        Одно выполнение тела цикла по-научному называется итерация. Цикл в примере выше совершает три итерации. <br><br>
+                        Если бы строка i++ отсутствовала в примере выше, то цикл бы повторялся (в теории) вечно. На практике, конечно, браузер не позволит такому случиться, он предоставит пользователю возможность остановить «подвисший» скрипт, а JavaScript на стороне сервера придётся «убить» процесс.<br><br>
+                        Любое выражение или переменная может быть условием цикла, а не только сравнение: условие while вычисляется и преобразуется в логическое значение.
+                        Например, while (i) – более краткий вариант while (i != 0):
+                    </div>
+                </div>
+
+                <div class="do_while"  id="do_while-block">
+                    <div class="title" id="do_while-title" style="display: none">
+                        Цикл "do...while"
+                    </div>
+
+                    <div id="do_while-content">
+
+                    </div>
+                </div>
+
+                <div class="for" id="for-block">
+                    <div class="title" id="for-title" style="display: none">
+                        Цикл "for"
+                    </div>
+
+                    <div id="for-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/basics/cycles.js"></script>
 </body>
 </html>

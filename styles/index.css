@@ -3,6 +3,14 @@ body{
     cursor: default;
 }
 
+.content{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: darkred;
+    text-align: center;
+}
+
 .container{
     display: grid;
     /*grid-auto-flow: column;*/
@@ -45,16 +53,16 @@ body{
     color: darkred;
 }
 
-#back-btn{
-    font-family: 'Play', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    margin: 10px 0 0 20px;
-}
 
-#back-btn:hover{
-    color: darkred;
-    cursor: pointer;
+
+@media (max-width: 400px) {
+    .card{
+        width: 240px;
+    }
+
+    .subtitle > p{
+        margin: 0 40px 6px 40px;
+    }
 }
 
 /*------------------Заполненные--------------------*/
