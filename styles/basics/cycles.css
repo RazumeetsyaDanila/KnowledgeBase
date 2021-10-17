@@ -63,6 +63,14 @@ body{
     margin-bottom: 10px;
 }
 
+#do_while-block{
+    display: none;
+}
+
+#for-block{
+    display: none;
+}
+
 #while{
     color: darkred;
     border: 2px solid darkred;
