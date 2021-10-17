@@ -29,7 +29,6 @@ body{
     /*border: 2px solid #4a4e69;*/
     border-radius: 4px;
     width: 45vw;
-    height: 90vh;
     text-align: center;
     margin: 46px 0 0 0;
 }
@@ -120,9 +119,9 @@ body{
     }
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 800px) and (max-width: 1400px) {
     .card{
-        width: 60vw;
+        width: 70vw;
     }
 
     .code-block{
