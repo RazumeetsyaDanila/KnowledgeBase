@@ -19,6 +19,9 @@ body{
 .container{
     display: grid;
     justify-content: center;
+}
+
+.content{
     margin-bottom: 10px;
 }
 
