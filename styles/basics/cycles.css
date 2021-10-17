@@ -19,6 +19,7 @@ body{
 .container{
     display: grid;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .card{
@@ -57,6 +58,7 @@ body{
 
 .content .while{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #while{
