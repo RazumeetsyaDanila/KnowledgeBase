@@ -39,12 +39,10 @@
                             Цикл while имеет следующий синтаксис:
                         </div>
                         <div class="code-block">
-                            <div id="ct1">
-                                while (condition) {<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;// код<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;// также называемый "телом цикла"<br>
-                                }
-                            </div>
+                            <div id="ct1">while (condition) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// код<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// также называемый "телом цикла"<br>
+}</div>
                             <img class="copy-btn" id="cb1" src="../../img/copy-blue.png" onclick="copy('#ct1')">
                         </div>
                         <div>
@@ -52,13 +50,11 @@
                             Например, цикл ниже выводит i, пока i < 3:
                         </div>
                         <div class="code-block">
-                            <div id="ct2">
-                                let i = 0;<br>
-                                while (i < 3) { // выводит 0, затем 1, затем 2<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
-                                }
-                            </div>
+                            <div id="ct2">let i = 0;<br>
+while (i < 3) { // выводит 0, затем 1, затем 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+}</div>
                             <img class="copy-btn" id="cb2" src="../../img/copy-blue.png" onclick="copy('#ct2')">
                         </div>
                         <div>
@@ -68,13 +64,11 @@
                             Например, while (i) – более краткий вариант while (i != 0):
                         </div>
                         <div class="code-block">
-                            <div id="ct3">
-                                let i = 3;<br>
-                                while (i) { // когда i будет равно 0, условие станет ложным, и цикл остановится<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
-                                }
-                            </div>
+                            <div id="ct3">let i = 3;<br>
+while (i) { // когда i будет равно 0, условие станет ложным, и цикл остановится<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
+}</div>
                             <img class="copy-btn" id="cb3" src="../../img/copy-blue.png" onclick="copy('#ct3')">
                         </div>
                     </div>
@@ -90,20 +84,22 @@
                             Проверку условия можно разместить под телом цикла, используя специальный синтаксис do..while:
                         </div>
                         <div class="code-block">
-                            do {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;// тело цикла<br>
-                            } while (condition);
+                            <div id="ct4">do {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// тело цикла<br>
+} while (condition);</div>
+                            <img class="copy-btn" id="cb4" src="../../img/copy-blue.png" onclick="copy('#ct4')">
                         </div>
                         <div>
                             Цикл сначала выполнит тело, а затем проверит условие condition, и пока его значение равно true, он будет выполняться снова и снова.<br><br>
                             Например:
                         </div>
                         <div class="code-block">
-                            let i = 0;<br>
-                            do {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
-                            } while (i < 3);
+                            <div id="ct5">let i = 0;<br>
+do {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+} while (i < 3);</div>
+                            <img class="copy-btn" id="cb5" src="../../img/copy-blue.png" onclick="copy('#ct5')">
                         </div>
                         <div>
                             Такая форма синтаксиса оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным. На практике чаще используется форма с предусловием: while(…) {…}.
@@ -129,9 +125,10 @@
                         </div>
                         <div>Например:</div>
                         <div class="code-block">
-                            for (let i = 0; i < 3; i++) { // выведет 0, затем 1 и 2<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;alert(i);<br>
-                            }
+                            <div id="ct6">for (let i = 0; i < 3; i++) { // выведет 0, затем 1 и 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert(i);<br>
+                                }</div>
+                            <img class="copy-btn" id="cb6" src="../../img/copy-blue.png" onclick="copy('#ct6')">
                         </div>
 
                     </div>

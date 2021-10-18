@@ -55,7 +55,7 @@ whileBtn.addEventListener('click', choiceWhile);
 do_whileBtn.addEventListener('click', choiceDoWhile);
 forBtn.addEventListener('click', choiceFor);
 
-//------------------- копирование -------------------------
+//------------------- функция копирования -------------------------
 function copy(el) {
     var $tmp = $("<textarea>");
     $("body").append($tmp);
@@ -64,27 +64,52 @@ function copy(el) {
     $tmp.remove();
 }
 
-let cb1 = document.getElementById('cb1');
-let cb2 = document.getElementById('cb2');
-let cb3 = document.getElementById('cb3');
+let cb = [];
+let cbCount = 6;
+for(let i = 1; i <= cbCount; i++){
+    cb[i] = document.getElementById('cb'+ i);
+}
 
 function copyCT1() {
-    cb1.src = "../../img/copy-red.png"
-    cb2.src = "../../img/copy-blue.png"
-    cb3.src = "../../img/copy-blue.png"
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 1) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
 }
 function copyCT2() {
-    cb1.src = "../../img/copy-blue.png"
-    cb2.src = "../../img/copy-red.png"
-    cb3.src = "../../img/copy-blue.png"
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 2) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
 }
 function copyCT3() {
-    cb1.src = "../../img/copy-blue.png"
-    cb2.src = "../../img/copy-blue.png"
-    cb3.src = "../../img/copy-red.png"
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 3) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
+}
+function copyCT4() {
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 4) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
+}
+function copyCT5() {
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 5) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
+}
+function copyCT6() {
+    for(let i = 6; i <= cbCount; i++){
+        if (i == 6) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
 }
 
-cb1.addEventListener("click", copyCT1);
-cb2.addEventListener("click", copyCT2);
-cb3.addEventListener("click", copyCT3);
-
+cb[1].addEventListener("click", copyCT1);
+cb[2].addEventListener("click", copyCT2);
+cb[3].addEventListener("click", copyCT3);
+cb[4].addEventListener("click", copyCT4);
+cb[5].addEventListener("click", copyCT5);
+cb[6].addEventListener("click", copyCT6);

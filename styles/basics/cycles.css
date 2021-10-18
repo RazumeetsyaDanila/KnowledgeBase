@@ -1,6 +1,7 @@
 body{
     background-color: #f2e9e4;
     cursor: default;
+    -moz-user-select: none;
 }
 
 #back-btn{
