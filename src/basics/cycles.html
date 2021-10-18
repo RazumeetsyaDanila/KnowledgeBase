@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../styles/basics/cycles.css?v.1.0.1">
+    <link rel="stylesheet" href="../../styles/basics/cycles.css?v.1.0.2">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../img/alien3.ico" type="image/x-icon">
@@ -39,21 +39,27 @@
                             Цикл while имеет следующий синтаксис:
                         </div>
                         <div class="code-block">
-                            while (condition) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;// код<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;// также называемый "телом цикла"<br>
-                            }
+                            <div id="ct1">
+                                while (condition) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;// код<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;// также называемый "телом цикла"<br>
+                                }
+                            </div>
+                            <img class="copy-btn" id="cb1" src="../../img/copy-blue.png" onclick="copy('#ct1')">
                         </div>
                         <div>
                             Код из тела цикла выполняется, пока условие condition истинно.<br>
                             Например, цикл ниже выводит i, пока i < 3:
                         </div>
                         <div class="code-block">
-                            let i = 0;<br>
-                            while (i < 3) { // выводит 0, затем 1, затем 2<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
-                            }
+                            <div id="ct2">
+                                let i = 0;<br>
+                                while (i < 3) { // выводит 0, затем 1, затем 2<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                                }
+                            </div>
+                            <img class="copy-btn" id="cb2" src="../../img/copy-blue.png" onclick="copy('#ct2')">
                         </div>
                         <div>
                             Одно выполнение тела цикла по-научному называется итерация. Цикл в примере выше совершает три итерации. <br><br>
@@ -62,11 +68,14 @@
                             Например, while (i) – более краткий вариант while (i != 0):
                         </div>
                         <div class="code-block">
-                            let i = 3;<br>
-                            while (i) { // когда i будет равно 0, условие станет ложным, и цикл остановится<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
-                            }
+                            <div id="ct3">
+                                let i = 3;<br>
+                                while (i) { // когда i будет равно 0, условие станет ложным, и цикл остановится<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;alert( i );<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
+                                }
+                            </div>
+                            <img class="copy-btn" id="cb3" src="../../img/copy-blue.png" onclick="copy('#ct3')">
                         </div>
                     </div>
                 </div>
@@ -131,5 +140,6 @@
         </div>
     </div>
     <script src="../../scripts/basics/cycles.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 </html>

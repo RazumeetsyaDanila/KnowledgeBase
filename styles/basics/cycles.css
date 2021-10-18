@@ -81,7 +81,7 @@ body{
 .while .title, .do_while .title, .for .title{
     font-family: 'Play', sans-serif;
     font-weight: bold;
-    color: darkred;
+    color: #8a0001;
     font-size: 40px;
     margin: 20px;
     -moz-user-select: none;
@@ -100,6 +100,21 @@ body{
     padding: 10px 10px 10px 10px;
     font-family: 'Noto Sans Mono', monospace;
     font-size: 16px;
+    background-color: #dbd2cd;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.copy-btn{
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+}
+
+.copy-btn:hover{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }
 
 @media (max-width: 400px) {
