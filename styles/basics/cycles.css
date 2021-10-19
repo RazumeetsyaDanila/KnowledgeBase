@@ -3,6 +3,12 @@ body{
     cursor: default;
     -moz-user-select: none;
 }
+hr{
+    color: #4a4e69;
+    width: 80%;
+    margin: 30px 0 30px 0;
+    justify-self: center;
+}
 
 #back-btn{
     font-family: 'Play', sans-serif;
@@ -31,6 +37,7 @@ body{
 
 .content{
     margin-bottom: 10px;
+    display: grid;
 }
 
 .card{
@@ -86,7 +93,7 @@ body{
     grid-auto-flow: row;
 }
 
-.while .title, .do_while .title, .for .title{
+.title{
     font-family: 'Play', sans-serif;
     font-weight: bold;
     color: #8a0001;
@@ -95,10 +102,12 @@ body{
     -moz-user-select: none;
 }
 
-#while-content, #do_while-content, #for-content{
+
+#while-content, #do_while-content, #for-content, #break-content, #continue-content{
     text-align: start;
     font-size: 18px;
     font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 
 .code-block{
@@ -127,23 +136,19 @@ body{
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .card{
         width: 90vw;
     }
 
     .header{
-        /*grid-auto-flow: row;*/
         grid-gap: 2px;
     }
 
     .header .title{
         width: 100px;
         font-size: 18px;
-    }
-
-    .title{
-        margin-top: 6px;
+        margin: 6px 4px 6px 4px;
     }
 
     .code-block{
@@ -154,6 +159,10 @@ body{
     .up-btn{
         right: 20px;
         bottom: 20px;
+    }
+
+    .continue-title{
+        font-size: 26px;
     }
 }
 

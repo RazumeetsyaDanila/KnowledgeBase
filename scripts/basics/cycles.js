@@ -65,7 +65,7 @@ function copy(el) {
 }
 
 let cb = [];
-let cbCount = 6;
+let cbCount = 8;
 for(let i = 1; i <= cbCount; i++){
     cb[i] = document.getElementById('cb'+ i);
 }
@@ -101,11 +101,36 @@ function copyCT5() {
     }
 }
 function copyCT6() {
-    for(let i = 6; i <= cbCount; i++){
+    for(let i = 1; i <= cbCount; i++){
         if (i == 6) cb[i].src = "../../img/copy-red.png";
         else cb[i].src = "../../img/copy-blue.png";
     }
 }
+function copyCT7() {
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 7) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
+}
+function copyCT8() {
+    for(let i = 1; i <= cbCount; i++){
+        if (i == 8) cb[i].src = "../../img/copy-red.png";
+        else cb[i].src = "../../img/copy-blue.png";
+    }
+}
+
+// function copyColorChange(){
+//     for(let i = 1; i <= cbCount; i++){
+//         for(let j = 1; j <= cbCount; j++){
+//             if (j == i) cb[j].src = "../../img/copy-red.png";
+//             else cb[j].src = "../../img/copy-blue.png";
+//         }
+//     }
+// }
+//
+// for(let i = 1; i <= cbCount; i++){
+//     cb[i].addEventListener("click", copyColorChange);
+// }
 
 cb[1].addEventListener("click", copyCT1);
 cb[2].addEventListener("click", copyCT2);
@@ -113,3 +138,5 @@ cb[3].addEventListener("click", copyCT3);
 cb[4].addEventListener("click", copyCT4);
 cb[5].addEventListener("click", copyCT5);
 cb[6].addEventListener("click", copyCT6);
+cb[7].addEventListener("click", copyCT7);
+cb[8].addEventListener("click", copyCT8);
