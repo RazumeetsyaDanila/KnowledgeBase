@@ -72,50 +72,50 @@ for(let i = 1; i <= cbCount; i++){
 
 function copyCT1() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 1) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 1) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT2() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 2) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 2) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT3() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 3) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 3) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT4() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 4) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 4) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT5() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 5) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 5) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT6() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 6) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 6) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT7() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 7) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 7) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 function copyCT8() {
     for(let i = 1; i <= cbCount; i++){
-        if (i == 8) cb[i].src = "../../img/copy-red.png";
-        else cb[i].src = "../../img/copy-blue.png";
+        if (i == 8) cb[i].src = "../../../img/copy-red.png";
+        else cb[i].src = "../../../img/copy-blue.png";
     }
 }
 
