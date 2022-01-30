@@ -47,6 +47,7 @@ body{
     border-radius: 6px;
     text-align: center;
     margin: 0 0 6px 0;
+    padding-bottom: 2px;
 }
 
 .subtitle > p:hover{
@@ -85,5 +86,13 @@ body{
 }
 
 #cycles > p:hover{
+    border: 2px solid darkred;
+}
+
+#jsBook > p{
+    border: 2px solid #4a4e69;
+}
+
+#jsBook > p:hover{
     border: 2px solid darkred;
 }
