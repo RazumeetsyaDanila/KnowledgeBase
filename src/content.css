@@ -10,6 +10,7 @@ body{
     font-size: 40px;
     color: darkred;
     text-align: center;
+    margin-top: 10px;
 }
 
 .container{
@@ -52,7 +53,7 @@ body{
 
 .subtitle > p:hover{
     cursor: pointer;
-    border: 2px solid darkred;
+    border: 2px solid #8b0000;
     color: darkred;
 }
 
@@ -68,6 +69,10 @@ body{
 .back-to-main:hover{
     color: darkred;
     cursor: pointer;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 400px) {
